@@ -1,8 +1,5 @@
-
-
-function callName<T>(arg: T): T {
-    return arg;
+class Mar {
+    done(): void {
+        console.log('hi')
+    }
 }
-
-
-callName<"Alex">("Alex")
