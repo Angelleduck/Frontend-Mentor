@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./build/**/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        shoulder:"Big Shoulders Display",
+        lexend:"Lexend Deca",
+      }
+    },
   },
   plugins: [],
 }

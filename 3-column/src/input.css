@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+        font-family: sans-serif;
+        line-height: 1.1;
+        font-size: 15px;
+    }
+
+    :root {
+        --clr-orange: hsl(31, 77%, 52%);
+        --clr-cyan-600: hsl(184, 100%, 22%);
+        --clr-cyan-700: hsl(179, 100%, 13%);
+        --clr-white-500: hsla(0, 0%, 100%, 0.75);
+        --clr-neutral-gray: hsl(0, 0%, 95%);
+    }
+}
