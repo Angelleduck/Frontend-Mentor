@@ -573,24 +573,12 @@ body {
   display: flex;
 }
 
-.h-56{
-  height: 14rem;
-}
-
-.min-h-full{
-  min-height: 100%;
-}
-
 .min-h-screen{
   min-height: 100vh;
 }
 
 .w-\[920px\]{
   width: 920px;
-}
-
-.w-56{
-  width: 14rem;
 }
 
 .flex-col{
@@ -644,9 +632,9 @@ body {
   background-color: var(--clr-orange);
 }
 
-.bg-amber-400{
+.bg-red-500{
   --tw-bg-opacity: 1;
-  background-color: rgb(251 191 36 / var(--tw-bg-opacity));
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .p-\[20px\]{
@@ -705,10 +693,6 @@ body {
 
 .text-\[var\(--clr-white-500\)\]{
   color: var(--clr-white-500);
-}
-
-.duration-\[0\.2s\]{
-  transition-duration: 0.2s;
 }
 
 .duration-200{

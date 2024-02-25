@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --B-Yellow: hsl(71, 73%, 54%);
+    --L-Gray: hsl(204, 43%, 93%);
+    --G-Blue: hsl(218, 22%, 67%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 1.6rem;
+    font-family: Karla, sans-serif;
+    background-color: var(--L-Gray);
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*grid-template-rows: repeat(2, 1fr);*/
+    width: 650px;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 3rem 1.6rem;
+
+}
+
+header {
+    padding: 4rem;
+    grid-column: 1 / -1;
+
+    h3 {
+        color: var(--Cyan);
+        padding-bottom: 2rem;
+    }
+
+    h4 {
+        color: var(--B-Yellow);
+        padding-bottom: 20px;
+    }
+
+    p {
+        color: var(--G-Blue);
+        line-height: 1.5;
+    }
+}
+
+
+.left-box {
+    background-color: #26a09e;
+    padding: 3rem;
+    h4{
+        color: var(--L-Gray);
+        margin-bottom: 1rem;
+    }
+    p{
+        color: var(--L-Gray);
+        padding-bottom: 2.5rem;
+    }
+    button{
+        background-color: var(--B-Yellow);
+        color: var(--L-Gray);
+        border: none;
+        border-radius: 0.5rem;
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+}
+.space{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    .big{
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--L-Gray);
+    }
+    .small{
+        font-size: 1.4rem;
+        color: var(--L-Gray);
+    }
+
+}
+
+
+.right-box{
+    background-color: var(--Cyan);
+    padding: 3rem;
+    padding-right: 8rem;
+    h4{
+        color: var(--L-Gray);
+        margin-bottom: 1rem;
+    }
+    p{
+        color: var(--L-Gray);
+        line-height: 1.4;
+        font-size: 1.4rem;
+    }
+}
+
+
+@media (max-width: 430px) {
+    main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header{
+        padding: 3rem;
+    }
+}
