@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body {
+        font-family: Kumbh Sans;
+        line-height: 1.1;
+        p{
+            font-size: 14px;
+        }
+    }
+    :root{
+        --dark-cyan:hsl(185, 75%, 39%);
+        --desa-blue:hsl(229, 23%, 23%);
+        --gray-blue:hsl(227, 10%, 46%);
+        --jst-gray:hsl(0, 0%, 59%);
+    }
+}
